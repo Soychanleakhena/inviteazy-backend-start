@@ -14,7 +14,7 @@ import { MongoUserRepository } from "./repositories/mongodb/userRepository";
 
 import { FirebaseUserRepository } from "./repositories/firebasedb/userRepository";
 // import { MongoEventRepository } from "./repositories/mongodb/eventRepository";
-import { initializeApp } from "firebase-admin";
+// import { initializeApp } from "firebase-admin";
 import eventRoutes from "./routes/eventRoutes";
 import { EventController } from "./controllers/eventController";
 import { EventService } from "./services/eventService";
@@ -39,7 +39,6 @@ const pgPool = connectPostgresDb();
 
 // connectMySQL();
 
-const pgPool = connectPostgresDb();
 // const mysqlPool = connectMysqlDb();
 // Repositories
 // const userRepository = new MongoUserRepository();
