@@ -11,6 +11,7 @@ import { PostgresUserRepository } from "./repositories/postgres/userRepository";
 import { loggingMiddleware } from "./middlewares/loggingMiddleware";
 import { connectMongoDB } from "./config/mongodb/db";
 import { MongoUserRepository } from "./repositories/mongodb/userRepository";
+
 import { FirebaseUserRepository } from "./repositories/firebasedb/userRepository";
 // import { MongoEventRepository } from "./repositories/mongodb/eventRepository";
 import { initializeApp } from "firebase-admin";
@@ -23,21 +24,32 @@ import { PostgresEventRepository } from "./repositories/postgres/eventRepository
 
 dotenv.config();
 
+import { connectMysqlDb } from "./config/mysqldb/db";
+import guestRoutes from './routes/guestRoutes';dotenv.config();
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // Switch connection to database
 // connectMongoDB();
+
 const pgPool = connectPostgresDb();
 // initializeApp();
 
 
 
+// connectMySQL();
+
+const pgPool = connectPostgresDb();
+// const mysqlPool = connectMysqlDb();
 // Repositories
 // const userRepository = new MongoUserRepository();
 const userRepository = new PostgresUserRepository(pgPool);
+
 const eventRepository = new PostgresEventRepository(pgPool);
 // const eventRepository = new MongoEventRepository();
+
+// const userRepository = new PostgresUserRepository(mysqlPool);
+
 
 // Services
 const userService = new UserService(userRepository);
@@ -55,8 +67,9 @@ app.use(loggingMiddleware);
 // Routes
 app.use("/api/users", userRoutes(userController));
 app.use("/api/auth", authRoutes(authController));
-app.use("/api/events", eventRoutes(eventsController));
 
+app.use("/api/events", eventRoutes(eventsController));
+app.use('/api/v1', guestRoutes);
 // Handle Errors
 app.use(errorMiddleware);
 
