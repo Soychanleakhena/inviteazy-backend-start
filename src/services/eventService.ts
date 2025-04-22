@@ -15,5 +15,10 @@ import {
       const createdEvent = await this.eventRepository.create(event);
       return createdEvent;
     }
-  }
-  
+
+    async getEventByUserId(user_id: string): Promise<IEvent[]> {
+      const events = await this.eventRepository.findByUserId(user_id);
+      return events;
+    }
+    
+}

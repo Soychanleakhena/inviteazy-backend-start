@@ -52,4 +52,15 @@ export class EventController {
       next(error);
     }
   }
+
+  async getEventsByUserId(req: Request, res: Response, next: NextFunction) {
+    try {
+      const { user_id } = req.params;
+      const events = await this.eventService.getEventByUserId(user_id);
+      res.status(200).json({ data: events });
+    } catch (err) {
+      console.error(err);
+      next(err);
+    }
+  }
 }

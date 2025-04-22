@@ -12,6 +12,7 @@ export interface IEvent {
   export interface IEventRepository {
     findAll(): Promise<IEvent[]>;  // Ensure it's asynchronous
     create(event: Omit<IEvent, "id">): Promise<IEvent>;
+    findByUserId(user_id: string): Promise<IEvent[]>;
   }
   
   
@@ -20,6 +21,7 @@ export interface IEvent {
     createEvent(
       event: Omit<IEvent, "id">
     ): Promise<IEvent>;
+    getEventByUserId(user_id: string): Promise<IEvent[]>;
   }
 
   

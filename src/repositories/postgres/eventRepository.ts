@@ -28,5 +28,15 @@ export class PostgresEventRepository implements IEventRepository {
     );
     return rows[0];
   }
+
+  async findByUserId(user_id: string): Promise<IEvent[]> {
+    const { rows } = await queryWithLogging(
+      this.pool,
+      "SELECT id, user_id, name, datetime, location, description FROM events WHERE user_id = $1",
+      [user_id]
+    );
+    return rows;
+  }
+  
 }
 
