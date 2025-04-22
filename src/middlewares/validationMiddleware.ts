@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction } from "express";
+import { describe } from "node:test";
 import { z } from "zod";
 
 const userSchema = z.object({
@@ -7,6 +8,16 @@ const userSchema = z.object({
   password: z.string().min(8),
   role: z.enum(["admin", "public", "tourist"]),
 });
+
+const eventSchema = z.object({
+  user_id: z.string().min(1),
+  name: z.string().min(3),
+  datetime: z.string(),
+  location: z.string().min(8),
+  description:  z.string().min(8),
+});
+
+
 
 const loginSchema = z.object({
   email: z.string().email(),
@@ -61,6 +72,24 @@ export const validateIdInURLParam = (
     next();
   } catch (error) {
     if (error instanceof z.ZodError) {
+      res.status(400).json({ message: error.errors[0].message });
+      return;
+    }
+    next(error);
+  }
+};
+
+export const validateEvent = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+): void => {
+  try {
+    eventSchema.parse(req.body);
+    next();
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      console.log("--------------- ", error.errors[0].message);
       res.status(400).json({ message: error.errors[0].message });
       return;
     }
