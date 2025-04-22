@@ -39,7 +39,6 @@ const pgPool = connectPostgresDb();
 
 // connectMySQL();
 
-const pgPool = connectPostgresDb();
 // const mysqlPool = connectMysqlDb();
 // Repositories
 // const userRepository = new MongoUserRepository();
@@ -68,7 +67,7 @@ app.use(loggingMiddleware);
 app.use("/api/users", userRoutes(userController));
 app.use("/api/auth", authRoutes(authController));
 
-app.use("/api/events", eventRoutes(eventsController));
+app.use("/api/v1", eventRoutes(eventsController));
 app.use('/api/v1', guestRoutes);
 // Handle Errors
 app.use(errorMiddleware);
