@@ -17,30 +17,59 @@ import { PostgresInviteesRepository } from "./repositories/postgres/inviteaRepos
 import { InviteeService } from "./services/inviteService";
 
 
+import { FirebaseUserRepository } from "./repositories/firebasedb/userRepository";
+// import { MongoEventRepository } from "./repositories/mongodb/eventRepository";
+import { initializeApp } from "firebase-admin";
+import eventRoutes from "./routes/eventRoutes";
+import { EventController } from "./controllers/eventController";
+import { EventService } from "./services/eventService";
+import { PostgresEventRepository } from "./repositories/postgres/eventRepository";
+
+
 
 dotenv.config();
 
+import { connectMysqlDb } from "./config/mysqldb/db";
+import guestRoutes from './routes/guestRoutes';dotenv.config();
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // Switch connection to database
 // connectMongoDB();
-const pgPool = connectPostgresDb();
 
+const pgPool = connectPostgresDb();
+// initializeApp();
+
+
+
+// connectMySQL();
+
+// const mysqlPool = connectMysqlDb();
 // Repositories
 // const userRepository = new MongoUserRepository();
 const userRepository = new PostgresUserRepository(pgPool);
 const inviteRepository = new PostgresInviteesRepository(pgPool);
 // const eventRepository = new PostgresEventsRepository(pgPool);
 
+const eventRepository = new PostgresEventRepository(pgPool);
+// const eventRepository = new MongoEventRepository();
+
+// const userRepository = new PostgresUserRepository(mysqlPool);
+
+
 // Services
 const userService = new UserService(userRepository);
+
 const inviteService = new InviteeService(inviteRepository);
+const eventService = new EventService (eventRepository)
+
 
 // Controllers
 const userController = new UserController(userService);
 const authController = new AuthController(userService);
+
 const inviteController = new InviteesController(inviteService);
+const eventsController = new EventController(eventService);
 
 // Middlewares
 app.use(express.json());
@@ -52,6 +81,8 @@ app.use("/api/auth", authRoutes(authController));
 app.use("/api/invite", InviteesRoutes(inviteController));
 
 
+app.use("/api/v1", eventRoutes(eventsController));
+app.use('/api/v1', guestRoutes);
 // Handle Errors
 app.use(errorMiddleware);
 
@@ -62,3 +93,4 @@ app.listen(port, () => {
 //   throw new Error("Function not implemented.");
 // }
 
+});
