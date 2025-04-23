@@ -9,7 +9,7 @@ import {
 export default function userRoutes(controller: UserController): Router {
   const router = Router();
 
-  router.get("/", authMiddleware, controller.getAllUsers.bind(controller));
+  router.get("/", controller.getAllUsers.bind(controller));
   router.get(
     "/:id",
     authMiddleware,

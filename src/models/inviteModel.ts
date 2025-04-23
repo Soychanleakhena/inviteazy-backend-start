@@ -1,0 +1,25 @@
+import mongoose, { Schema, Document } from "mongoose";
+
+export interface IInvitee extends Document {
+    event_id: string; 
+    user_id: string; 
+    status: 'pending' | 'accept' | 'maybe' | 'no' | 'busy'; 
+    qr_code: string; 
+    is_checked_in: boolean;
+    checked_in_at: Date | null; 
+    created_at?: Date; 
+}
+
+const inviteeSchema: Schema = new Schema(
+    {
+        event_id: { type: String, required: true },
+        user_id: { type: String, required: true },
+        status: { type: String, enum: ['pending', 'accept', 'maybe', 'no', 'busy'], required: true },
+        qr_code: { type: String, required: true },
+        is_checked_in: { type: Boolean, default: false },
+        checked_in_at: { type: Date, default: null },
+        created_at: { type: Date, default: Date.now }
+    }
+);
+
+export const InviteeModel = mongoose.model<IInvitee>("Invitee", inviteeSchema);
