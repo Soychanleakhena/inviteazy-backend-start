@@ -28,7 +28,11 @@ export class UserService implements IUserService {
       throw Object.assign(new Error("User already exists"), { status: 400 });
     }
 
-    const newUser = await this.userRepository.create(user);
+    const hashedPassword = await bycrpt.hash(user.password, 10);
+    const newUser = await this.userRepository.create({
+      ...user,
+      password: hashedPassword,
+    });
 
     const token = jwt.sign(
       { id: newUser.id },
@@ -57,9 +61,12 @@ export class UserService implements IUserService {
     return {
       user: {
         id: user.id,
-        name: user.name,
+        fullname: user.fullname,
         role: user.role,
         email: user.email,
+        phone_number: user.phone_number,
+        profile_picture: user.profile_picture,
+        address: user.address,
       },
       token,
     };

@@ -1,12 +1,14 @@
 import { Request, Response, NextFunction } from "express";
-import { describe } from "node:test";
 import { z } from "zod";
 
 const userSchema = z.object({
-  name: z.string().min(3),
+  fullname: z.string().min(3),
   email: z.string().email(),
   password: z.string().min(8),
   role: z.enum(["admin", "public", "tourist"]),
+  phone_number: z.string().min(8),
+  profile_picture: z.string().url().optional(), // Optional and must be a valid URL
+  address: z.string().min(5),
 });
 
 const eventSchema = z.object({
@@ -14,10 +16,8 @@ const eventSchema = z.object({
   name: z.string().min(3),
   datetime: z.string(),
   location: z.string().min(8),
-  description:  z.string().min(8),
+  description: z.string().min(8),
 });
-
-
 
 const loginSchema = z.object({
   email: z.string().email(),
@@ -96,3 +96,4 @@ export const validateEvent = (
     next(error);
   }
 };
+

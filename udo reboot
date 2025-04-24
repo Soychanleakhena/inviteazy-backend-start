@@ -1,0 +1,491 @@
+១១ 08 07:38:46 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 08 07:38:46 ThinkPad4 dockerd[14869]: time="2024-11-08T07:38:46.980153977+07:00" level=info msg="Starting up"
+១១ 08 07:38:46 ThinkPad4 dockerd[14869]: time="2024-11-08T07:38:46.981060404+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 08 07:38:47 ThinkPad4 dockerd[14869]: time="2024-11-08T07:38:47.431493211+07:00" level=info msg="Loading containers: start."
+១១ 08 07:38:47 ThinkPad4 dockerd[14869]: time="2024-11-08T07:38:47.880965738+07:00" level=info msg="Loading containers: done."
+១១ 08 07:38:47 ThinkPad4 dockerd[14869]: time="2024-11-08T07:38:47.941186080+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 08 07:38:47 ThinkPad4 dockerd[14869]: time="2024-11-08T07:38:47.941272311+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 08 07:38:47 ThinkPad4 dockerd[14869]: time="2024-11-08T07:38:47.941371529+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 08 07:38:47 ThinkPad4 dockerd[14869]: time="2024-11-08T07:38:47.941867753+07:00" level=info msg="Daemon has completed initialization"
+១១ 08 07:38:48 ThinkPad4 dockerd[14869]: time="2024-11-08T07:38:48.011380611+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 08 07:38:48 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 08 08:20:53 ThinkPad4 dockerd[14869]: time="2024-11-08T08:20:53.582301590+07:00" level=error msg=/moby.buildkit.v1.frontend.LLBBridge/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=e9c31a8b853aff6d traceID=4bcd9b2c0c565a7c1db0c2e70c207587
+១១ 08 08:20:53 ThinkPad4 dockerd[14869]: time="2024-11-08T08:20:53.746330732+07:00" level=error msg=/moby.buildkit.v1.Control/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=1e550b733c767ec7 traceID=4bcd9b2c0c565a7c1db0c2e70c207587
+១១ 08 08:21:33 ThinkPad4 dockerd[14869]: time="2024-11-08T08:21:33.981571691+07:00" level=error msg=/moby.buildkit.v1.frontend.LLBBridge/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=0551c9a0dbdc5b31 traceID=49dc7c260eb7d8e5ed955511c6e73f03
+១១ 08 08:21:34 ThinkPad4 dockerd[14869]: time="2024-11-08T08:21:34.020417657+07:00" level=error msg=/moby.buildkit.v1.Control/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=95f7a3e265c8f718 traceID=49dc7c260eb7d8e5ed955511c6e73f03
+១១ 08 08:29:41 ThinkPad4 dockerd[14869]: 2024/11/08 08:29:41 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+១១ 08 08:29:41 ThinkPad4 dockerd[14869]: time="2024-11-08T08:29:41.912168781+07:00" level=error msg=/moby.buildkit.v1.frontend.LLBBridge/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=bcff8c4cdce9f812 traceID=c8f7b5c272614d9d0900cd150cf5d7a6
+១១ 08 08:29:41 ThinkPad4 dockerd[14869]: time="2024-11-08T08:29:41.935634852+07:00" level=error msg=/moby.buildkit.v1.Control/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=7f34989a282d12f8 traceID=c8f7b5c272614d9d0900cd150cf5d7a6
+១១ 08 08:31:20 ThinkPad4 dockerd[14869]: 2024/11/08 08:31:20 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+១១ 08 08:36:26 ThinkPad4 dockerd[14869]: 2024/11/08 08:36:26 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+១១ 08 08:37:09 ThinkPad4 dockerd[14869]: time="2024-11-08T08:37:09.670527652+07:00" level=error msg=/moby.buildkit.v1.frontend.LLBBridge/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=97220798b62fb3cb traceID=9f0273a531c2c2bab0d2f0c44b652cb3
+១១ 08 08:37:09 ThinkPad4 dockerd[14869]: time="2024-11-08T08:37:09.698210630+07:00" level=error msg=/moby.buildkit.v1.Control/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=e10bea951ffab371 traceID=9f0273a531c2c2bab0d2f0c44b652cb3
+១១ 08 08:42:16 ThinkPad4 dockerd[14869]: 2024/11/08 08:42:16 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+១១ 08 08:42:16 ThinkPad4 dockerd[14869]: time="2024-11-08T08:42:16.256644856+07:00" level=error msg=/moby.buildkit.v1.frontend.LLBBridge/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=bd893d1839274251 traceID=9cecc5a4cab3dff45d9aef5e29475470
+១១ 08 08:42:16 ThinkPad4 dockerd[14869]: time="2024-11-08T08:42:16.282916248+07:00" level=error msg=/moby.buildkit.v1.Control/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=732f5096d870a48d traceID=9cecc5a4cab3dff45d9aef5e29475470
+១១ 08 08:45:33 ThinkPad4 dockerd[14869]: time="2024-11-08T08:45:33.442452555+07:00" level=error msg=/moby.buildkit.v1.frontend.LLBBridge/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=dd04e72e8db37a2c traceID=8938f1ae18430a56729b569c1c5fcb55
+១១ 08 08:45:33 ThinkPad4 dockerd[14869]: time="2024-11-08T08:45:33.469095468+07:00" level=error msg=/moby.buildkit.v1.Control/Solve error="rpc error: code = Unknown desc = failed to read dockerfile: open Dockerfile: no such file or directory" spanID=86160410a7daf725 traceID=8938f1ae18430a56729b569c1c5fcb55
+១១ 08 08:48:24 ThinkPad4 dockerd[14869]: time="2024-11-08T08:48:24.475237184+07:00" level=info msg="Layer sha256:a61e818f0b1f7522e3a27211026f564f1fd98ae2034229d1233623e92a6a7961 cleaned up"
+១១ 08 08:48:24 ThinkPad4 dockerd[14869]: time="2024-11-08T08:48:24.608075072+07:00" level=error msg=/moby.buildkit.v1.Control/Solve error="rpc error: code = Canceled desc = context canceled" spanID=25d0f1e2a8f0f2b3 traceID=9b1d84456ca37f2ee341f9c1401c595f
+១១ 08 08:48:24 ThinkPad4 dockerd[14869]: time="2024-11-08T08:48:24.697981231+07:00" level=info msg="Layer sha256:16c88c4e67dd8ed4c67c0e9c1dae7df697f4607eab4c3d2f12b1b18206a6a6e4 cleaned up"
+១១ 08 08:48:24 ThinkPad4 dockerd[14869]: time="2024-11-08T08:48:24.698015667+07:00" level=info msg="Layer sha256:b2dba74777543b60e1a5be6da44e67659f51b8df1e96922205a5dde6b92dda3c cleaned up"
+១១ 08 08:50:02 ThinkPad4 dockerd[14869]: time="2024-11-08T08:50:02.409346451+07:00" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n" spanID=b87aa013dbd6057c traceID=e293acba03d47381572b352d19c166ea
+១១ 08 08:50:02 ThinkPad4 dockerd[14869]: time="2024-11-08T08:50:02.409422229+07:00" level=info msg="Ignoring extra error returned from registry" error="unauthorized: authentication required"
+១១ 08 08:52:32 ThinkPad4 dockerd[14869]: 2024/11/08 08:52:32 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+១១ 08 08:52:32 ThinkPad4 dockerd[14869]: 2024/11/08 08:52:32 http2: server: error reading preface from client @: read unix /run/docker.sock->@: read: connection reset by peer
+១១ 08 09:23:21 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 08 09:23:21 ThinkPad4 dockerd[14869]: time="2024-11-08T09:23:21.425774569+07:00" level=info msg="Processing signal 'terminated'"
+១១ 08 09:23:21 ThinkPad4 dockerd[14869]: time="2024-11-08T09:23:21.798774043+07:00" level=info msg="ignoring event" container=4f0e41f9fc739ff8432c0f4c8629b9885660c99a1b5bc8c3828e07a9894f5337 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+១១ 08 09:23:21 ThinkPad4 dockerd[14869]: time="2024-11-08T09:23:21.989013646+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 08 09:23:21 ThinkPad4 dockerd[14869]: time="2024-11-08T09:23:21.990260563+07:00" level=info msg="Daemon shutdown complete"
+១១ 08 09:23:22 ThinkPad4 dockerd[14869]: time="2024-11-08T09:23:22.479879051+07:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+១១ 08 09:23:22 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 08 09:23:22 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 08 09:23:22 ThinkPad4 systemd[1]: docker.service: Consumed 1min 13.953s CPU time.
+[0;1;39m-- Boot c4813b07b5c64058a53735b39d2ce5ee --[0m
+១១ 11 06:59:50 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 11 06:59:50 ThinkPad4 dockerd[1789]: time="2024-11-11T06:59:50.475277820+07:00" level=info msg="Starting up"
+១១ 11 06:59:50 ThinkPad4 dockerd[1789]: time="2024-11-11T06:59:50.477813143+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 11 06:59:50 ThinkPad4 dockerd[1789]: time="2024-11-11T06:59:50.740817218+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 11 06:59:50 ThinkPad4 dockerd[1789]: time="2024-11-11T06:59:50.756275208+07:00" level=info msg="Loading containers: start."
+១១ 11 06:59:51 ThinkPad4 dockerd[1789]: time="2024-11-11T06:59:51.252293157+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 11 06:59:51 ThinkPad4 dockerd[1789]: time="2024-11-11T06:59:51.323487149+07:00" level=info msg="Loading containers: done."
+១១ 11 06:59:51 ThinkPad4 dockerd[1789]: time="2024-11-11T06:59:51.343099018+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 11 06:59:51 ThinkPad4 dockerd[1789]: time="2024-11-11T06:59:51.343119493+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 11 06:59:51 ThinkPad4 dockerd[1789]: time="2024-11-11T06:59:51.343135891+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 11 06:59:51 ThinkPad4 dockerd[1789]: time="2024-11-11T06:59:51.343579434+07:00" level=info msg="Daemon has completed initialization"
+១១ 11 06:59:51 ThinkPad4 dockerd[1789]: time="2024-11-11T06:59:51.639509324+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 11 06:59:51 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 11 11:03:11 ThinkPad4 dockerd[1789]: time="2024-11-11T11:03:11.706136776+07:00" level=info msg="Processing signal 'terminated'"
+១១ 11 11:03:11 ThinkPad4 dockerd[1789]: time="2024-11-11T11:03:11.954683099+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 11 11:03:11 ThinkPad4 dockerd[1789]: time="2024-11-11T11:03:11.996325365+07:00" level=info msg="Daemon shutdown complete"
+១១ 11 11:03:11 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 11 11:03:12 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 11 11:03:12 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+[0;1;39m-- Boot 2cf77f86854e41aeaf70f212a213fab2 --[0m
+១១ 12 06:55:53 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 12 06:55:53 ThinkPad4 dockerd[1790]: time="2024-11-12T06:55:53.841563897+07:00" level=info msg="Starting up"
+១១ 12 06:55:53 ThinkPad4 dockerd[1790]: time="2024-11-12T06:55:53.845184758+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 12 06:55:54 ThinkPad4 dockerd[1790]: time="2024-11-12T06:55:54.066383010+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 12 06:55:54 ThinkPad4 dockerd[1790]: time="2024-11-12T06:55:54.077721045+07:00" level=info msg="Loading containers: start."
+១១ 12 06:55:54 ThinkPad4 dockerd[1790]: time="2024-11-12T06:55:54.579497340+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 12 06:55:54 ThinkPad4 dockerd[1790]: time="2024-11-12T06:55:54.638049127+07:00" level=info msg="Loading containers: done."
+១១ 12 06:55:54 ThinkPad4 dockerd[1790]: time="2024-11-12T06:55:54.654365796+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 12 06:55:54 ThinkPad4 dockerd[1790]: time="2024-11-12T06:55:54.654384243+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 12 06:55:54 ThinkPad4 dockerd[1790]: time="2024-11-12T06:55:54.654399913+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 12 06:55:54 ThinkPad4 dockerd[1790]: time="2024-11-12T06:55:54.654837432+07:00" level=info msg="Daemon has completed initialization"
+១១ 12 06:55:54 ThinkPad4 dockerd[1790]: time="2024-11-12T06:55:54.956338670+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 12 06:55:54 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 12 16:41:37 ThinkPad4 dockerd[1790]: time="2024-11-12T16:41:37.390930848+07:00" level=info msg="Processing signal 'terminated'"
+១១ 12 16:41:37 ThinkPad4 dockerd[1790]: time="2024-11-12T16:41:37.627560782+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 12 16:41:37 ThinkPad4 dockerd[1790]: time="2024-11-12T16:41:37.667074161+07:00" level=info msg="Daemon shutdown complete"
+១១ 12 16:41:37 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 12 16:41:37 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 12 16:41:37 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 12 16:41:37 ThinkPad4 systemd[1]: docker.service: Consumed 3.611s CPU time.
+[0;1;39m-- Boot fdf4b2110ff34a9491620791bb612b62 --[0m
+១១ 13 09:00:54 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 13 09:00:54 ThinkPad4 dockerd[1768]: time="2024-11-13T09:00:54.750367642+07:00" level=info msg="Starting up"
+១១ 13 09:00:54 ThinkPad4 dockerd[1768]: time="2024-11-13T09:00:54.752858088+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 13 09:00:55 ThinkPad4 dockerd[1768]: time="2024-11-13T09:00:55.021633830+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 13 09:00:55 ThinkPad4 dockerd[1768]: time="2024-11-13T09:00:55.036895281+07:00" level=info msg="Loading containers: start."
+១១ 13 09:00:55 ThinkPad4 dockerd[1768]: time="2024-11-13T09:00:55.523898555+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 13 09:00:55 ThinkPad4 dockerd[1768]: time="2024-11-13T09:00:55.583141642+07:00" level=info msg="Loading containers: done."
+១១ 13 09:00:55 ThinkPad4 dockerd[1768]: time="2024-11-13T09:00:55.603693214+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 13 09:00:55 ThinkPad4 dockerd[1768]: time="2024-11-13T09:00:55.603712518+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 13 09:00:55 ThinkPad4 dockerd[1768]: time="2024-11-13T09:00:55.603755073+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 13 09:00:55 ThinkPad4 dockerd[1768]: time="2024-11-13T09:00:55.604279557+07:00" level=info msg="Daemon has completed initialization"
+១១ 13 09:00:55 ThinkPad4 dockerd[1768]: time="2024-11-13T09:00:55.911309092+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 13 09:00:55 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 13 15:06:44 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 13 15:06:44 ThinkPad4 dockerd[1768]: time="2024-11-13T15:06:44.549499837+07:00" level=info msg="Processing signal 'terminated'"
+១១ 13 15:06:44 ThinkPad4 dockerd[1768]: time="2024-11-13T15:06:44.583449661+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 13 15:06:44 ThinkPad4 dockerd[1768]: time="2024-11-13T15:06:44.587640044+07:00" level=info msg="Daemon shutdown complete"
+១១ 13 15:06:44 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 13 15:06:44 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 13 15:06:44 ThinkPad4 systemd[1]: docker.service: Consumed 1.812s CPU time.
+[0;1;39m-- Boot 5de89d39613c4e52b7fe0a2b00a1f9c1 --[0m
+១១ 18 08:18:12 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 18 08:18:12 ThinkPad4 dockerd[1767]: time="2024-11-18T08:18:12.502070291+07:00" level=info msg="Starting up"
+១១ 18 08:18:12 ThinkPad4 dockerd[1767]: time="2024-11-18T08:18:12.504854797+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 18 08:18:12 ThinkPad4 dockerd[1767]: time="2024-11-18T08:18:12.772878966+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 18 08:18:12 ThinkPad4 dockerd[1767]: time="2024-11-18T08:18:12.788292392+07:00" level=info msg="Loading containers: start."
+១១ 18 08:18:13 ThinkPad4 dockerd[1767]: time="2024-11-18T08:18:13.271695252+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 18 08:18:13 ThinkPad4 dockerd[1767]: time="2024-11-18T08:18:13.331418066+07:00" level=info msg="Loading containers: done."
+១១ 18 08:18:13 ThinkPad4 dockerd[1767]: time="2024-11-18T08:18:13.352397883+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 18 08:18:13 ThinkPad4 dockerd[1767]: time="2024-11-18T08:18:13.352418052+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 18 08:18:13 ThinkPad4 dockerd[1767]: time="2024-11-18T08:18:13.352443934+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 18 08:18:13 ThinkPad4 dockerd[1767]: time="2024-11-18T08:18:13.352988427+07:00" level=info msg="Daemon has completed initialization"
+១១ 18 08:18:13 ThinkPad4 dockerd[1767]: time="2024-11-18T08:18:13.649356764+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 18 08:18:13 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 18 15:04:46 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 18 15:04:46 ThinkPad4 dockerd[1767]: time="2024-11-18T15:04:46.230261883+07:00" level=info msg="Processing signal 'terminated'"
+១១ 18 15:04:46 ThinkPad4 dockerd[1767]: time="2024-11-18T15:04:46.334423276+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 18 15:04:46 ThinkPad4 dockerd[1767]: time="2024-11-18T15:04:46.349055454+07:00" level=info msg="Daemon shutdown complete"
+១១ 18 15:04:46 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 18 15:04:46 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 18 15:04:46 ThinkPad4 systemd[1]: docker.service: Consumed 1.846s CPU time.
+[0;1;39m-- Boot bf59e219790e46b48fec27c8832e65ee --[0m
+១១ 19 06:58:58 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 19 06:58:58 ThinkPad4 dockerd[1770]: time="2024-11-19T06:58:58.601478148+07:00" level=info msg="Starting up"
+១១ 19 06:58:58 ThinkPad4 dockerd[1770]: time="2024-11-19T06:58:58.603697841+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 19 06:58:58 ThinkPad4 dockerd[1770]: time="2024-11-19T06:58:58.821693071+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 19 06:58:58 ThinkPad4 dockerd[1770]: time="2024-11-19T06:58:58.833153728+07:00" level=info msg="Loading containers: start."
+១១ 19 06:58:59 ThinkPad4 dockerd[1770]: time="2024-11-19T06:58:59.314410389+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 19 06:58:59 ThinkPad4 dockerd[1770]: time="2024-11-19T06:58:59.374889820+07:00" level=info msg="Loading containers: done."
+១១ 19 06:58:59 ThinkPad4 dockerd[1770]: time="2024-11-19T06:58:59.393714622+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 19 06:58:59 ThinkPad4 dockerd[1770]: time="2024-11-19T06:58:59.393738404+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 19 06:58:59 ThinkPad4 dockerd[1770]: time="2024-11-19T06:58:59.393762892+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 19 06:58:59 ThinkPad4 dockerd[1770]: time="2024-11-19T06:58:59.394315713+07:00" level=info msg="Daemon has completed initialization"
+១១ 19 06:58:59 ThinkPad4 dockerd[1770]: time="2024-11-19T06:58:59.688866654+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 19 06:58:59 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 20 16:42:21 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 20 16:42:21 ThinkPad4 dockerd[1770]: time="2024-11-20T16:42:21.747041259+07:00" level=info msg="Processing signal 'terminated'"
+១១ 20 16:42:21 ThinkPad4 dockerd[1770]: time="2024-11-20T16:42:21.855515194+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 20 16:42:21 ThinkPad4 dockerd[1770]: time="2024-11-20T16:42:21.864527476+07:00" level=info msg="Daemon shutdown complete"
+១១ 20 16:42:22 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 20 16:42:22 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 20 16:42:22 ThinkPad4 systemd[1]: docker.service: Consumed 4.388s CPU time.
+[0;1;39m-- Boot 2c621bfd6525482c8d4c13eca98c0a9f --[0m
+១១ 21 07:10:53 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 21 07:10:53 ThinkPad4 dockerd[1871]: time="2024-11-21T07:10:53.617924054+07:00" level=info msg="Starting up"
+១១ 21 07:10:53 ThinkPad4 dockerd[1871]: time="2024-11-21T07:10:53.620394814+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 21 07:10:53 ThinkPad4 dockerd[1871]: time="2024-11-21T07:10:53.882568577+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 21 07:10:53 ThinkPad4 dockerd[1871]: time="2024-11-21T07:10:53.894421938+07:00" level=info msg="Loading containers: start."
+១១ 21 07:10:54 ThinkPad4 dockerd[1871]: time="2024-11-21T07:10:54.378840579+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 21 07:10:54 ThinkPad4 dockerd[1871]: time="2024-11-21T07:10:54.438518753+07:00" level=info msg="Loading containers: done."
+១១ 21 07:10:54 ThinkPad4 dockerd[1871]: time="2024-11-21T07:10:54.458752262+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 21 07:10:54 ThinkPad4 dockerd[1871]: time="2024-11-21T07:10:54.458773509+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 21 07:10:54 ThinkPad4 dockerd[1871]: time="2024-11-21T07:10:54.458789631+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 21 07:10:54 ThinkPad4 dockerd[1871]: time="2024-11-21T07:10:54.459311920+07:00" level=info msg="Daemon has completed initialization"
+១១ 21 07:10:54 ThinkPad4 dockerd[1871]: time="2024-11-21T07:10:54.754331239+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 21 07:10:54 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 21 15:12:33 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 21 15:12:33 ThinkPad4 dockerd[1871]: time="2024-11-21T15:12:33.371039624+07:00" level=info msg="Processing signal 'terminated'"
+១១ 21 15:12:33 ThinkPad4 dockerd[1871]: time="2024-11-21T15:12:33.469256829+07:00" level=info msg="Daemon shutdown complete"
+១១ 21 15:12:33 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 21 15:12:33 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 21 15:12:33 ThinkPad4 systemd[1]: docker.service: Consumed 1.203s CPU time.
+[0;1;39m-- Boot 10d95fbebdbe49aeb44c3463415b0c99 --[0m
+១១ 22 09:12:46 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 22 09:12:47 ThinkPad4 dockerd[1828]: time="2024-11-22T09:12:47.308619529+07:00" level=info msg="Starting up"
+១១ 22 09:12:47 ThinkPad4 dockerd[1828]: time="2024-11-22T09:12:47.311074813+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 22 09:12:47 ThinkPad4 dockerd[1828]: time="2024-11-22T09:12:47.577272354+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 22 09:12:47 ThinkPad4 dockerd[1828]: time="2024-11-22T09:12:47.589197313+07:00" level=info msg="Loading containers: start."
+១១ 22 09:12:48 ThinkPad4 dockerd[1828]: time="2024-11-22T09:12:48.085216103+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 22 09:12:48 ThinkPad4 dockerd[1828]: time="2024-11-22T09:12:48.144763402+07:00" level=info msg="Loading containers: done."
+១១ 22 09:12:48 ThinkPad4 dockerd[1828]: time="2024-11-22T09:12:48.250538200+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 22 09:12:48 ThinkPad4 dockerd[1828]: time="2024-11-22T09:12:48.250557889+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 22 09:12:48 ThinkPad4 dockerd[1828]: time="2024-11-22T09:12:48.250574565+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 22 09:12:48 ThinkPad4 dockerd[1828]: time="2024-11-22T09:12:48.250777993+07:00" level=info msg="Daemon has completed initialization"
+១១ 22 09:12:48 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 22 09:12:48 ThinkPad4 dockerd[1828]: time="2024-11-22T09:12:48.468000576+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 22 15:03:04 ThinkPad4 dockerd[1828]: time="2024-11-22T15:03:04.055543597+07:00" level=info msg="Processing signal 'terminated'"
+១១ 22 15:03:04 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 22 15:03:04 ThinkPad4 dockerd[1828]: time="2024-11-22T15:03:04.153694983+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 22 15:03:04 ThinkPad4 dockerd[1828]: time="2024-11-22T15:03:04.165151071+07:00" level=info msg="Daemon shutdown complete"
+១១ 22 15:03:04 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 22 15:03:04 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 22 15:03:04 ThinkPad4 systemd[1]: docker.service: Consumed 1.272s CPU time.
+[0;1;39m-- Boot 10a916cd33074874bfd970732042b530 --[0m
+១១ 23 08:27:26 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 23 08:27:26 ThinkPad4 dockerd[1815]: time="2024-11-23T08:27:26.447145135+07:00" level=info msg="Starting up"
+១១ 23 08:27:26 ThinkPad4 dockerd[1815]: time="2024-11-23T08:27:26.449598234+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 23 08:27:26 ThinkPad4 dockerd[1815]: time="2024-11-23T08:27:26.708924225+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 23 08:27:26 ThinkPad4 dockerd[1815]: time="2024-11-23T08:27:26.723036438+07:00" level=info msg="Loading containers: start."
+១១ 23 08:27:27 ThinkPad4 dockerd[1815]: time="2024-11-23T08:27:27.182193962+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 23 08:27:27 ThinkPad4 dockerd[1815]: time="2024-11-23T08:27:27.238351361+07:00" level=info msg="Loading containers: done."
+១១ 23 08:27:27 ThinkPad4 dockerd[1815]: time="2024-11-23T08:27:27.257412353+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 23 08:27:27 ThinkPad4 dockerd[1815]: time="2024-11-23T08:27:27.257432353+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 23 08:27:27 ThinkPad4 dockerd[1815]: time="2024-11-23T08:27:27.257455822+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 23 08:27:27 ThinkPad4 dockerd[1815]: time="2024-11-23T08:27:27.257978779+07:00" level=info msg="Daemon has completed initialization"
+១១ 23 08:27:27 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 23 08:27:27 ThinkPad4 dockerd[1815]: time="2024-11-23T08:27:27.559531366+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 23 11:18:12 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 23 11:18:12 ThinkPad4 dockerd[1815]: time="2024-11-23T11:18:12.381240117+07:00" level=info msg="Processing signal 'terminated'"
+១១ 23 11:18:12 ThinkPad4 dockerd[1815]: time="2024-11-23T11:18:12.474049388+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 23 11:18:12 ThinkPad4 dockerd[1815]: time="2024-11-23T11:18:12.477164124+07:00" level=info msg="Daemon shutdown complete"
+១១ 23 11:18:12 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 23 11:18:12 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 23 11:18:12 ThinkPad4 systemd[1]: docker.service: Consumed 1.764s CPU time.
+[0;1;39m-- Boot d6efb93425694c7394faf4dc8961c549 --[0m
+១១ 25 06:59:00 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 25 06:59:00 ThinkPad4 dockerd[1774]: time="2024-11-25T06:59:00.629113863+07:00" level=info msg="Starting up"
+១១ 25 06:59:00 ThinkPad4 dockerd[1774]: time="2024-11-25T06:59:00.631785469+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 25 06:59:00 ThinkPad4 dockerd[1774]: time="2024-11-25T06:59:00.903176677+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 25 06:59:00 ThinkPad4 dockerd[1774]: time="2024-11-25T06:59:00.917860957+07:00" level=info msg="Loading containers: start."
+១១ 25 06:59:01 ThinkPad4 dockerd[1774]: time="2024-11-25T06:59:01.387317314+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 25 06:59:01 ThinkPad4 dockerd[1774]: time="2024-11-25T06:59:01.445109270+07:00" level=info msg="Loading containers: done."
+១១ 25 06:59:01 ThinkPad4 dockerd[1774]: time="2024-11-25T06:59:01.463513803+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 25 06:59:01 ThinkPad4 dockerd[1774]: time="2024-11-25T06:59:01.463536728+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 25 06:59:01 ThinkPad4 dockerd[1774]: time="2024-11-25T06:59:01.463552573+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 25 06:59:01 ThinkPad4 dockerd[1774]: time="2024-11-25T06:59:01.463994846+07:00" level=info msg="Daemon has completed initialization"
+១១ 25 06:59:01 ThinkPad4 dockerd[1774]: time="2024-11-25T06:59:01.760782082+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 25 06:59:01 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+[0;1;39m-- Boot 102c2ca8089e4226ac4274dfdc1e0c24 --[0m
+១១ 25 12:58:12 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 25 12:58:12 ThinkPad4 dockerd[1810]: time="2024-11-25T12:58:12.660820716+07:00" level=info msg="Starting up"
+១១ 25 12:58:12 ThinkPad4 dockerd[1810]: time="2024-11-25T12:58:12.663097405+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 25 12:58:12 ThinkPad4 dockerd[1810]: time="2024-11-25T12:58:12.912472015+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 25 12:58:12 ThinkPad4 dockerd[1810]: time="2024-11-25T12:58:12.931212962+07:00" level=info msg="Loading containers: start."
+១១ 25 12:58:13 ThinkPad4 dockerd[1810]: time="2024-11-25T12:58:13.326456776+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 25 12:58:13 ThinkPad4 dockerd[1810]: time="2024-11-25T12:58:13.381530758+07:00" level=info msg="Loading containers: done."
+១១ 25 12:58:13 ThinkPad4 dockerd[1810]: time="2024-11-25T12:58:13.392345047+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 25 12:58:13 ThinkPad4 dockerd[1810]: time="2024-11-25T12:58:13.392364937+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 25 12:58:13 ThinkPad4 dockerd[1810]: time="2024-11-25T12:58:13.392383554+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 25 12:58:13 ThinkPad4 dockerd[1810]: time="2024-11-25T12:58:13.392594876+07:00" level=info msg="Daemon has completed initialization"
+១១ 25 12:58:13 ThinkPad4 dockerd[1810]: time="2024-11-25T12:58:13.468294538+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 25 12:58:13 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 25 16:51:56 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 25 16:51:56 ThinkPad4 dockerd[1810]: time="2024-11-25T16:51:56.425158197+07:00" level=info msg="Processing signal 'terminated'"
+១១ 25 16:51:56 ThinkPad4 dockerd[1810]: time="2024-11-25T16:51:56.520307560+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 25 16:51:56 ThinkPad4 dockerd[1810]: time="2024-11-25T16:51:56.526100007+07:00" level=info msg="Daemon shutdown complete"
+១១ 25 16:51:56 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 25 16:51:56 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 25 16:51:56 ThinkPad4 systemd[1]: docker.service: Consumed 1.015s CPU time.
+[0;1;39m-- Boot 43d7826cbe774a2083bb4c6eba30e95b --[0m
+១១ 26 07:11:18 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 26 07:11:18 ThinkPad4 dockerd[1809]: time="2024-11-26T07:11:18.454346571+07:00" level=info msg="Starting up"
+១១ 26 07:11:18 ThinkPad4 dockerd[1809]: time="2024-11-26T07:11:18.456851558+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 26 07:11:18 ThinkPad4 dockerd[1809]: time="2024-11-26T07:11:18.711190507+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 26 07:11:18 ThinkPad4 dockerd[1809]: time="2024-11-26T07:11:18.722935039+07:00" level=info msg="Loading containers: start."
+១១ 26 07:11:19 ThinkPad4 dockerd[1809]: time="2024-11-26T07:11:19.228104509+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 26 07:11:19 ThinkPad4 dockerd[1809]: time="2024-11-26T07:11:19.287699612+07:00" level=info msg="Loading containers: done."
+១១ 26 07:11:19 ThinkPad4 dockerd[1809]: time="2024-11-26T07:11:19.309500014+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 26 07:11:19 ThinkPad4 dockerd[1809]: time="2024-11-26T07:11:19.309518172+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 26 07:11:19 ThinkPad4 dockerd[1809]: time="2024-11-26T07:11:19.309536112+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 26 07:11:19 ThinkPad4 dockerd[1809]: time="2024-11-26T07:11:19.309730870+07:00" level=info msg="Daemon has completed initialization"
+១១ 26 07:11:19 ThinkPad4 dockerd[1809]: time="2024-11-26T07:11:19.602678532+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 26 07:11:19 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 26 08:32:48 ThinkPad4 dockerd[1809]: time="2024-11-26T08:32:48.867981558+07:00" level=info msg="Processing signal 'terminated'"
+១១ 26 08:32:48 ThinkPad4 dockerd[1809]: time="2024-11-26T08:32:48.886355150+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 26 08:32:48 ThinkPad4 dockerd[1809]: time="2024-11-26T08:32:48.887115142+07:00" level=info msg="Daemon shutdown complete"
+១១ 26 08:32:48 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 26 08:32:49 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 26 08:32:49 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+[0;1;39m-- Boot b783c48dfed94b90b71179d8d2a77ad8 --[0m
+១១ 26 08:59:51 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 26 08:59:51 ThinkPad4 dockerd[1798]: time="2024-11-26T08:59:51.578603140+07:00" level=info msg="Starting up"
+១១ 26 08:59:51 ThinkPad4 dockerd[1798]: time="2024-11-26T08:59:51.580908601+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 26 08:59:51 ThinkPad4 dockerd[1798]: time="2024-11-26T08:59:51.834964700+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 26 08:59:51 ThinkPad4 dockerd[1798]: time="2024-11-26T08:59:51.845872112+07:00" level=info msg="Loading containers: start."
+១១ 26 08:59:52 ThinkPad4 dockerd[1798]: time="2024-11-26T08:59:52.345327617+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 26 08:59:52 ThinkPad4 dockerd[1798]: time="2024-11-26T08:59:52.406361251+07:00" level=info msg="Loading containers: done."
+១១ 26 08:59:52 ThinkPad4 dockerd[1798]: time="2024-11-26T08:59:52.425627490+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 26 08:59:52 ThinkPad4 dockerd[1798]: time="2024-11-26T08:59:52.425645871+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 26 08:59:52 ThinkPad4 dockerd[1798]: time="2024-11-26T08:59:52.425662612+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 26 08:59:52 ThinkPad4 dockerd[1798]: time="2024-11-26T08:59:52.426118108+07:00" level=info msg="Daemon has completed initialization"
+១១ 26 08:59:52 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 26 08:59:52 ThinkPad4 dockerd[1798]: time="2024-11-26T08:59:52.723873283+07:00" level=info msg="API listen on /run/docker.sock"
+[0;1;39m-- Boot 4de32b6562e642b182fd6fb5cb8e3569 --[0m
+១១ 26 11:00:03 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 26 11:00:03 ThinkPad4 dockerd[1809]: time="2024-11-26T11:00:03.494475502+07:00" level=info msg="Starting up"
+១១ 26 11:00:03 ThinkPad4 dockerd[1809]: time="2024-11-26T11:00:03.496955430+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 26 11:00:03 ThinkPad4 dockerd[1809]: time="2024-11-26T11:00:03.745481144+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 26 11:00:03 ThinkPad4 dockerd[1809]: time="2024-11-26T11:00:03.756886556+07:00" level=info msg="Loading containers: start."
+១១ 26 11:00:04 ThinkPad4 dockerd[1809]: time="2024-11-26T11:00:04.244201150+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 26 11:00:04 ThinkPad4 dockerd[1809]: time="2024-11-26T11:00:04.299335907+07:00" level=info msg="Loading containers: done."
+១១ 26 11:00:04 ThinkPad4 dockerd[1809]: time="2024-11-26T11:00:04.318546428+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 26 11:00:04 ThinkPad4 dockerd[1809]: time="2024-11-26T11:00:04.318566013+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 26 11:00:04 ThinkPad4 dockerd[1809]: time="2024-11-26T11:00:04.318584832+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 26 11:00:04 ThinkPad4 dockerd[1809]: time="2024-11-26T11:00:04.319400546+07:00" level=info msg="Daemon has completed initialization"
+១១ 26 11:00:04 ThinkPad4 dockerd[1809]: time="2024-11-26T11:00:04.619762254+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 26 11:00:04 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+[0;1;39m-- Boot a96b8aaf97d4448cb7790e79e63eb1f8 --[0m
+១១ 26 13:00:22 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 26 13:00:23 ThinkPad4 dockerd[1830]: time="2024-11-26T13:00:23.117268170+07:00" level=info msg="Starting up"
+១១ 26 13:00:23 ThinkPad4 dockerd[1830]: time="2024-11-26T13:00:23.119784187+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 26 13:00:23 ThinkPad4 dockerd[1830]: time="2024-11-26T13:00:23.372122815+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 26 13:00:23 ThinkPad4 dockerd[1830]: time="2024-11-26T13:00:23.383690115+07:00" level=info msg="Loading containers: start."
+១១ 26 13:00:23 ThinkPad4 dockerd[1830]: time="2024-11-26T13:00:23.886095324+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 26 13:00:23 ThinkPad4 dockerd[1830]: time="2024-11-26T13:00:23.951775551+07:00" level=info msg="Loading containers: done."
+១១ 26 13:00:23 ThinkPad4 dockerd[1830]: time="2024-11-26T13:00:23.969943190+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 26 13:00:23 ThinkPad4 dockerd[1830]: time="2024-11-26T13:00:23.969972017+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 26 13:00:23 ThinkPad4 dockerd[1830]: time="2024-11-26T13:00:23.969996746+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 26 13:00:23 ThinkPad4 dockerd[1830]: time="2024-11-26T13:00:23.971013279+07:00" level=info msg="Daemon has completed initialization"
+១១ 26 13:00:24 ThinkPad4 dockerd[1830]: time="2024-11-26T13:00:24.399315816+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 26 13:00:24 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+[0;1;39m-- Boot 0c87c55c42e34dd8ada28eec92b53f05 --[0m
+១១ 26 13:03:21 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 26 13:03:21 ThinkPad4 dockerd[1807]: time="2024-11-26T13:03:21.903337442+07:00" level=info msg="Starting up"
+១១ 26 13:03:21 ThinkPad4 dockerd[1807]: time="2024-11-26T13:03:21.907396380+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 26 13:03:22 ThinkPad4 dockerd[1807]: time="2024-11-26T13:03:22.158696754+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 26 13:03:22 ThinkPad4 dockerd[1807]: time="2024-11-26T13:03:22.176264849+07:00" level=info msg="Loading containers: start."
+១១ 26 13:03:22 ThinkPad4 dockerd[1807]: time="2024-11-26T13:03:22.662158366+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 26 13:03:22 ThinkPad4 dockerd[1807]: time="2024-11-26T13:03:22.716401294+07:00" level=info msg="Loading containers: done."
+១១ 26 13:03:22 ThinkPad4 dockerd[1807]: time="2024-11-26T13:03:22.741177863+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 26 13:03:22 ThinkPad4 dockerd[1807]: time="2024-11-26T13:03:22.741197619+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 26 13:03:22 ThinkPad4 dockerd[1807]: time="2024-11-26T13:03:22.741221768+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 26 13:03:22 ThinkPad4 dockerd[1807]: time="2024-11-26T13:03:22.741646068+07:00" level=info msg="Daemon has completed initialization"
+១១ 26 13:03:23 ThinkPad4 dockerd[1807]: time="2024-11-26T13:03:23.053212172+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 26 13:03:23 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+[0;1;39m-- Boot 878808312a8c48238a9dee681dfe1e81 --[0m
+១១ 26 13:14:44 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 26 13:14:44 ThinkPad4 dockerd[1738]: time="2024-11-26T13:14:44.891560993+07:00" level=info msg="Starting up"
+១១ 26 13:14:44 ThinkPad4 dockerd[1738]: time="2024-11-26T13:14:44.900373266+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 26 13:14:45 ThinkPad4 dockerd[1738]: time="2024-11-26T13:14:45.246986589+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 26 13:14:45 ThinkPad4 dockerd[1738]: time="2024-11-26T13:14:45.274502182+07:00" level=info msg="Loading containers: start."
+១១ 26 13:14:46 ThinkPad4 dockerd[1738]: time="2024-11-26T13:14:46.406197464+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 26 13:14:46 ThinkPad4 dockerd[1738]: time="2024-11-26T13:14:46.652009415+07:00" level=info msg="Loading containers: done."
+១១ 26 13:14:46 ThinkPad4 dockerd[1738]: time="2024-11-26T13:14:46.691594737+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 26 13:14:46 ThinkPad4 dockerd[1738]: time="2024-11-26T13:14:46.691661089+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 26 13:14:46 ThinkPad4 dockerd[1738]: time="2024-11-26T13:14:46.691750383+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 26 13:14:46 ThinkPad4 dockerd[1738]: time="2024-11-26T13:14:46.692524179+07:00" level=info msg="Daemon has completed initialization"
+១១ 26 13:14:47 ThinkPad4 dockerd[1738]: time="2024-11-26T13:14:47.072980214+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 26 13:14:47 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 26 13:44:05 ThinkPad4 dockerd[1738]: time="2024-11-26T13:44:05.826386325+07:00" level=info msg="Processing signal 'terminated'"
+១១ 26 13:44:05 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 26 13:44:05 ThinkPad4 dockerd[1738]: time="2024-11-26T13:44:05.832011292+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 26 13:44:05 ThinkPad4 dockerd[1738]: time="2024-11-26T13:44:05.837926842+07:00" level=info msg="Daemon shutdown complete"
+១១ 26 13:44:05 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 26 13:44:05 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 26 13:44:05 ThinkPad4 systemd[1]: docker.service: Consumed 1.824s CPU time.
+[0;1;39m-- Boot 0dfdbff5848347eaa422836711aaddea --[0m
+១១ 26 13:44:42 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 26 13:44:42 ThinkPad4 dockerd[1813]: time="2024-11-26T13:44:42.872986309+07:00" level=info msg="Starting up"
+១១ 26 13:44:42 ThinkPad4 dockerd[1813]: time="2024-11-26T13:44:42.880239639+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 26 13:44:43 ThinkPad4 dockerd[1813]: time="2024-11-26T13:44:43.197656761+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 26 13:44:43 ThinkPad4 dockerd[1813]: time="2024-11-26T13:44:43.212210334+07:00" level=info msg="Loading containers: start."
+១១ 26 13:44:43 ThinkPad4 dockerd[1813]: time="2024-11-26T13:44:43.758866590+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 26 13:44:44 ThinkPad4 dockerd[1813]: time="2024-11-26T13:44:44.043891485+07:00" level=info msg="Loading containers: done."
+១១ 26 13:44:44 ThinkPad4 dockerd[1813]: time="2024-11-26T13:44:44.085999470+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 26 13:44:44 ThinkPad4 dockerd[1813]: time="2024-11-26T13:44:44.086070675+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 26 13:44:44 ThinkPad4 dockerd[1813]: time="2024-11-26T13:44:44.086131812+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 26 13:44:44 ThinkPad4 dockerd[1813]: time="2024-11-26T13:44:44.087178690+07:00" level=info msg="Daemon has completed initialization"
+១១ 26 13:44:44 ThinkPad4 dockerd[1813]: time="2024-11-26T13:44:44.490336015+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 26 13:44:44 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+[0;1;39m-- Boot f9df06dcf1a34c7291c1e50245c10e69 --[0m
+១១ 26 13:47:45 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 26 13:47:45 ThinkPad4 dockerd[1823]: time="2024-11-26T13:47:45.911921550+07:00" level=info msg="Starting up"
+១១ 26 13:47:45 ThinkPad4 dockerd[1823]: time="2024-11-26T13:47:45.917934141+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 26 13:47:46 ThinkPad4 dockerd[1823]: time="2024-11-26T13:47:46.105830529+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 26 13:47:46 ThinkPad4 dockerd[1823]: time="2024-11-26T13:47:46.119128315+07:00" level=info msg="Loading containers: start."
+១១ 26 13:47:46 ThinkPad4 dockerd[1823]: time="2024-11-26T13:47:46.584693365+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 26 13:47:46 ThinkPad4 dockerd[1823]: time="2024-11-26T13:47:46.660920118+07:00" level=info msg="Loading containers: done."
+១១ 26 13:47:46 ThinkPad4 dockerd[1823]: time="2024-11-26T13:47:46.676916786+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 26 13:47:46 ThinkPad4 dockerd[1823]: time="2024-11-26T13:47:46.676942591+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 26 13:47:46 ThinkPad4 dockerd[1823]: time="2024-11-26T13:47:46.676984670+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 26 13:47:46 ThinkPad4 dockerd[1823]: time="2024-11-26T13:47:46.677249528+07:00" level=info msg="Daemon has completed initialization"
+១១ 26 13:47:46 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 26 13:47:46 ThinkPad4 dockerd[1823]: time="2024-11-26T13:47:46.762596822+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 26 15:07:22 ThinkPad4 dockerd[1823]: time="2024-11-26T15:07:22.069009431+07:00" level=info msg="Processing signal 'terminated'"
+១១ 26 15:07:22 ThinkPad4 dockerd[1823]: time="2024-11-26T15:07:22.073486886+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 26 15:07:22 ThinkPad4 dockerd[1823]: time="2024-11-26T15:07:22.074275222+07:00" level=info msg="Daemon shutdown complete"
+១១ 26 15:07:22 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 26 15:07:22 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 26 15:07:22 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 26 15:07:22 ThinkPad4 systemd[1]: docker.service: Consumed 1.139s CPU time.
+[0;1;39m-- Boot 1bd98ec519694865bb1a30511f0d644c --[0m
+១១ 27 09:15:50 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 27 09:15:51 ThinkPad4 dockerd[1806]: time="2024-11-27T09:15:51.328212781+07:00" level=info msg="Starting up"
+១១ 27 09:15:51 ThinkPad4 dockerd[1806]: time="2024-11-27T09:15:51.333433882+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 27 09:15:51 ThinkPad4 dockerd[1806]: time="2024-11-27T09:15:51.685970044+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 27 09:15:51 ThinkPad4 dockerd[1806]: time="2024-11-27T09:15:51.713249608+07:00" level=info msg="Loading containers: start."
+១១ 27 09:15:52 ThinkPad4 dockerd[1806]: time="2024-11-27T09:15:52.203776037+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 27 09:15:52 ThinkPad4 dockerd[1806]: time="2024-11-27T09:15:52.269847509+07:00" level=info msg="Loading containers: done."
+១១ 27 09:15:52 ThinkPad4 dockerd[1806]: time="2024-11-27T09:15:52.281851550+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 27 09:15:52 ThinkPad4 dockerd[1806]: time="2024-11-27T09:15:52.281869304+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 27 09:15:52 ThinkPad4 dockerd[1806]: time="2024-11-27T09:15:52.281886887+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 27 09:15:52 ThinkPad4 dockerd[1806]: time="2024-11-27T09:15:52.282058875+07:00" level=info msg="Daemon has completed initialization"
+១១ 27 09:15:52 ThinkPad4 dockerd[1806]: time="2024-11-27T09:15:52.384306082+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 27 09:15:52 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 27 12:30:53 ThinkPad4 dockerd[1806]: time="2024-11-27T12:30:53.543716137+07:00" level=info msg="Processing signal 'terminated'"
+១១ 27 12:30:53 ThinkPad4 dockerd[1806]: time="2024-11-27T12:30:53.563933132+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 27 12:30:53 ThinkPad4 dockerd[1806]: time="2024-11-27T12:30:53.568282829+07:00" level=info msg="Daemon shutdown complete"
+១១ 27 12:30:53 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 27 12:30:53 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 27 12:30:53 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 27 12:30:53 ThinkPad4 systemd[1]: docker.service: Consumed 1.627s CPU time.
+[0;1;39m-- Boot 2961be06b8fb4ec7ac00a8e9a29848ed --[0m
+១១ 27 12:59:51 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 27 12:59:51 ThinkPad4 dockerd[1811]: time="2024-11-27T12:59:51.636529847+07:00" level=info msg="Starting up"
+១១ 27 12:59:51 ThinkPad4 dockerd[1811]: time="2024-11-27T12:59:51.642297596+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 27 12:59:51 ThinkPad4 dockerd[1811]: time="2024-11-27T12:59:51.994456825+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 27 12:59:52 ThinkPad4 dockerd[1811]: time="2024-11-27T12:59:52.011922252+07:00" level=info msg="Loading containers: start."
+១១ 27 12:59:52 ThinkPad4 dockerd[1811]: time="2024-11-27T12:59:52.569400047+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 27 12:59:52 ThinkPad4 dockerd[1811]: time="2024-11-27T12:59:52.818932816+07:00" level=info msg="Loading containers: done."
+១១ 27 12:59:52 ThinkPad4 dockerd[1811]: time="2024-11-27T12:59:52.981637379+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 27 12:59:52 ThinkPad4 dockerd[1811]: time="2024-11-27T12:59:52.981706650+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 27 12:59:52 ThinkPad4 dockerd[1811]: time="2024-11-27T12:59:52.981770240+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 27 12:59:52 ThinkPad4 dockerd[1811]: time="2024-11-27T12:59:52.982242704+07:00" level=info msg="Daemon has completed initialization"
+១១ 27 12:59:53 ThinkPad4 dockerd[1811]: time="2024-11-27T12:59:53.296442459+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 27 12:59:53 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 27 16:46:50 ThinkPad4 dockerd[1811]: time="2024-11-27T16:46:50.290284694+07:00" level=info msg="Processing signal 'terminated'"
+១១ 27 16:46:50 ThinkPad4 dockerd[1811]: time="2024-11-27T16:46:50.539628294+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 27 16:46:50 ThinkPad4 dockerd[1811]: time="2024-11-27T16:46:50.582618057+07:00" level=info msg="Daemon shutdown complete"
+១១ 27 16:46:50 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 27 16:46:50 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 27 16:46:50 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 27 16:46:50 ThinkPad4 systemd[1]: docker.service: Consumed 2.616s CPU time.
+[0;1;39m-- Boot 9397ec4ef44f4386b5b200cc8f85287f --[0m
+១១ 28 07:01:25 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 28 07:01:25 ThinkPad4 dockerd[1859]: time="2024-11-28T07:01:25.665619766+07:00" level=info msg="Starting up"
+១១ 28 07:01:25 ThinkPad4 dockerd[1859]: time="2024-11-28T07:01:25.671655716+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 28 07:01:25 ThinkPad4 dockerd[1859]: time="2024-11-28T07:01:25.928697928+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 28 07:01:25 ThinkPad4 dockerd[1859]: time="2024-11-28T07:01:25.944141871+07:00" level=info msg="Loading containers: start."
+១១ 28 07:01:26 ThinkPad4 dockerd[1859]: time="2024-11-28T07:01:26.355486267+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 28 07:01:26 ThinkPad4 dockerd[1859]: time="2024-11-28T07:01:26.411589304+07:00" level=info msg="Loading containers: done."
+១១ 28 07:01:26 ThinkPad4 dockerd[1859]: time="2024-11-28T07:01:26.422719494+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 28 07:01:26 ThinkPad4 dockerd[1859]: time="2024-11-28T07:01:26.422738543+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 28 07:01:26 ThinkPad4 dockerd[1859]: time="2024-11-28T07:01:26.422754424+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 28 07:01:26 ThinkPad4 dockerd[1859]: time="2024-11-28T07:01:26.422934975+07:00" level=info msg="Daemon has completed initialization"
+១១ 28 07:01:26 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 28 07:01:26 ThinkPad4 dockerd[1859]: time="2024-11-28T07:01:26.508378618+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 28 16:52:27 ThinkPad4 dockerd[1859]: time="2024-11-28T16:52:27.994888389+07:00" level=info msg="Processing signal 'terminated'"
+១១ 28 16:52:28 ThinkPad4 dockerd[1859]: time="2024-11-28T16:52:28.007186652+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 28 16:52:28 ThinkPad4 dockerd[1859]: time="2024-11-28T16:52:28.016877772+07:00" level=info msg="Daemon shutdown complete"
+១១ 28 16:52:27 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 28 16:52:28 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 28 16:52:28 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 28 16:52:28 ThinkPad4 systemd[1]: docker.service: Consumed 5.115s CPU time.
+[0;1;39m-- Boot cd3cbeff90e448228bfedf45a9f76bfc --[0m
+១១ 29 07:56:18 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១១ 29 07:56:18 ThinkPad4 dockerd[1796]: time="2024-11-29T07:56:18.591566796+07:00" level=info msg="Starting up"
+១១ 29 07:56:18 ThinkPad4 dockerd[1796]: time="2024-11-29T07:56:18.597138764+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១១ 29 07:56:18 ThinkPad4 dockerd[1796]: time="2024-11-29T07:56:18.905908394+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១១ 29 07:56:18 ThinkPad4 dockerd[1796]: time="2024-11-29T07:56:18.932063999+07:00" level=info msg="Loading containers: start."
+១១ 29 07:56:19 ThinkPad4 dockerd[1796]: time="2024-11-29T07:56:19.438287956+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១១ 29 07:56:19 ThinkPad4 dockerd[1796]: time="2024-11-29T07:56:19.721691358+07:00" level=info msg="Loading containers: done."
+១១ 29 07:56:19 ThinkPad4 dockerd[1796]: time="2024-11-29T07:56:19.766025144+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១១ 29 07:56:19 ThinkPad4 dockerd[1796]: time="2024-11-29T07:56:19.766095741+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១១ 29 07:56:19 ThinkPad4 dockerd[1796]: time="2024-11-29T07:56:19.766154234+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១១ 29 07:56:19 ThinkPad4 dockerd[1796]: time="2024-11-29T07:56:19.766828651+07:00" level=info msg="Daemon has completed initialization"
+១១ 29 07:56:20 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១១ 29 07:56:20 ThinkPad4 dockerd[1796]: time="2024-11-29T07:56:20.159237242+07:00" level=info msg="API listen on /run/docker.sock"
+១១ 29 15:54:45 ThinkPad4 dockerd[1796]: time="2024-11-29T15:54:45.107382115+07:00" level=info msg="Processing signal 'terminated'"
+១១ 29 15:54:45 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១១ 29 15:54:45 ThinkPad4 dockerd[1796]: time="2024-11-29T15:54:45.279146103+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១១ 29 15:54:45 ThinkPad4 dockerd[1796]: time="2024-11-29T15:54:45.280633182+07:00" level=info msg="Daemon shutdown complete"
+១១ 29 15:54:45 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១១ 29 15:54:45 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១១ 29 15:54:45 ThinkPad4 systemd[1]: docker.service: Consumed 2.538s CPU time.
+[0;1;39m-- Boot 2e89d0f84a1848b2b7e3877cd867a844 --[0m
+១២ 02 08:00:47 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១២ 02 08:00:47 ThinkPad4 dockerd[1785]: time="2024-12-02T08:00:47.861695370+07:00" level=info msg="Starting up"
+១២ 02 08:00:47 ThinkPad4 dockerd[1785]: time="2024-12-02T08:00:47.868660199+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១២ 02 08:00:48 ThinkPad4 dockerd[1785]: time="2024-12-02T08:00:48.180475568+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១២ 02 08:00:48 ThinkPad4 dockerd[1785]: time="2024-12-02T08:00:48.202138210+07:00" level=info msg="Loading containers: start."
+១២ 02 08:00:48 ThinkPad4 dockerd[1785]: time="2024-12-02T08:00:48.857449996+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១២ 02 08:00:49 ThinkPad4 dockerd[1785]: time="2024-12-02T08:00:49.145067976+07:00" level=info msg="Loading containers: done."
+១២ 02 08:00:49 ThinkPad4 dockerd[1785]: time="2024-12-02T08:00:49.189232439+07:00" level=warning msg="WARNING: bridge-nf-call-iptables is disabled"
+១២ 02 08:00:49 ThinkPad4 dockerd[1785]: time="2024-12-02T08:00:49.189288985+07:00" level=warning msg="WARNING: bridge-nf-call-ip6tables is disabled"
+១២ 02 08:00:49 ThinkPad4 dockerd[1785]: time="2024-12-02T08:00:49.189333752+07:00" level=info msg="Docker daemon" commit=41ca978 containerd-snapshotter=false storage-driver=overlay2 version=27.3.1
+១២ 02 08:00:49 ThinkPad4 dockerd[1785]: time="2024-12-02T08:00:49.189997842+07:00" level=info msg="Daemon has completed initialization"
+១២ 02 08:00:49 ThinkPad4 systemd[1]: Started Docker Application Container Engine.
+១២ 02 08:00:49 ThinkPad4 dockerd[1785]: time="2024-12-02T08:00:49.591586033+07:00" level=info msg="API listen on /run/docker.sock"
+១២ 02 16:49:17 ThinkPad4 dockerd[1785]: time="2024-12-02T16:49:17.868078295+07:00" level=info msg="Processing signal 'terminated'"
+១២ 02 16:49:17 ThinkPad4 dockerd[1785]: time="2024-12-02T16:49:17.871068260+07:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+១២ 02 16:49:17 ThinkPad4 systemd[1]: Stopping Docker Application Container Engine...
+១២ 02 16:49:17 ThinkPad4 dockerd[1785]: time="2024-12-02T16:49:17.875194146+07:00" level=info msg="Daemon shutdown complete"
+១២ 02 16:49:17 ThinkPad4 systemd[1]: docker.service: Deactivated successfully.
+១២ 02 16:49:17 ThinkPad4 systemd[1]: Stopped Docker Application Container Engine.
+១២ 02 16:49:17 ThinkPad4 systemd[1]: docker.service: Consumed 4.190s CPU time.
+[0;1;39m-- Boot 35b6d0ff9cb74f7d8845128aefb8316a --[0m
+១២ 03 06:55:57 ThinkPad4 systemd[1]: Starting Docker Application Container Engine...
+១២ 03 06:55:57 ThinkPad4 dockerd[1832]: time="2024-12-03T06:55:57.427132256+07:00" level=info msg="Starting up"
+១២ 03 06:55:57 ThinkPad4 dockerd[1832]: time="2024-12-03T06:55:57.433239330+07:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+១២ 03 06:55:57 ThinkPad4 dockerd[1832]: time="2024-12-03T06:55:57.744708207+07:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+១២ 03 06:55:57 ThinkPad4 dockerd[1832]: time="2024-12-03T06:55:57.758010157+07:00" level=info msg="Loading containers: start."
+១២ 03 06:55:58 ThinkPad4 dockerd[1832]: time="2024-12-03T06:55:58.368712514+07:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.18.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+១២ 03 06:55:58 ThinkPad4 dockerd[1832]: time="2024-12-03T06:55:58.656208419+07:00" level=info msg="Loading containers: done."
+១២

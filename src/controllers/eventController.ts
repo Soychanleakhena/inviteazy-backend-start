@@ -25,7 +25,7 @@ export class EventController {
         datetime,
         location,
         description,
-       
+    
       });
   
       res.status(201).json({
