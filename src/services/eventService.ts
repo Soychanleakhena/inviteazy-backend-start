@@ -12,6 +12,7 @@ import {
     }
   
     async createEvent(event: Omit<IEvent, "id">): Promise<IEvent> {
+      console.log("==================Creating event:", event);
       const createdEvent = await this.eventRepository.create(event);
       return createdEvent;
     }

@@ -26,8 +26,17 @@ export class InviteesController {
     async createInvitee(req: Request, res: Response, next: NextFunction) {
         try {
             const { event_id } = req.params;
-            const invitee: IInviteeWithoutId = req.body;
-            const newInvitee = await this.inviteesService.create({ ...invitee, event_id });
+            const {user_id}  = req.body;
+            console.log("===>", event_id, user_id);
+            const newInvitee = await this.inviteesService.create({
+                event_id,
+                user_id,
+                status: 'pending', // or 'invited', depending on your logic
+                qr_code: "https://example.com/qr", // or leave it blank if backend handles it
+                is_checked_in: false,
+                checked_in_at: null,
+              });
+              
             res.status(201).json({ message: "New invitee created", data: newInvitee });
         } catch (error) {
             next(error);
@@ -84,4 +93,31 @@ export class InviteesController {
             next(error);
         }
     }
+
+    async getInviteesByEventId(req: Request, res: Response, next: NextFunction) {
+        try {
+          const { event_id } = req.params;
+      
+          if (!event_id) {
+            res.status(400).json({ message: "Event ID is required" });
+            return;
+          }
+      
+          const result = await this.inviteesService.findInviteeByEventId(event_id);
+          res.status(200).json({ message: "Get invitees by event ID", data: result });
+        } catch (error) {
+          next(error);
+        }
+      }
+
+      async countInviteeStatusByEventId(req: Request, res: Response, next: NextFunction) {
+        try {
+            const { event_id } = req.params;
+            const result = await this.inviteesService.countInviteeStatusByEventId(event_id);
+            res.status(200).json({ message: "Count invitee status by event ID", data: result });
+        } catch (error) {
+            next(error);
+        }
+      
+}
 }
