@@ -25,6 +25,12 @@ export interface IInviteeRepository {
     create(invitee: IInviteeWithoutId): Promise<IInvitee>;
     update(id: string, invitee: Partial<IInviteeWithoutId>): Promise<IInvitee | null>;
     delete(id: string): Promise<void>;
+    findInviteeByEventId(event_id: string): Promise<IInvitee[]>;
+    countInviteeStatusByEventId(event_id: string): Promise<{ status: string, count: number }[]>;
+    
 }
 
-export interface IInviteeService extends IInviteeRepository {}
+export interface IInviteeService extends IInviteeRepository {
+    countInviteeStatusByEventId(event_id: string):  Promise<{ status: string, count: number }[]>;
+    findInviteeByEventId(event_id: string): Promise<IInvitee[]>;
+}

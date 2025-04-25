@@ -30,7 +30,6 @@ import { PostgresEventRepository } from "./repositories/postgres/eventRepository
 dotenv.config();
 
 import { connectMysqlDb } from "./config/mysqldb/db";
-import guestRoutes from './routes/guestRoutes';dotenv.config();
 const app = express();
 const port = 3001;
 
@@ -48,9 +47,7 @@ const pgPool = connectPostgresDb();
 // Repositories
 // const userRepository = new MongoUserRepository();
 const userRepository = new PostgresUserRepository(pgPool);
-const inviteRepository = new PostgresInviteesRepository(pgPool);
-// const eventRepository = new PostgresEventsRepository(pgPool);
-
+const inviteRepository = new PostgresInviteesRepository(pgPool);// const eventRepository = new PostgresEventsRepository(pgPool)
 const eventRepository = new PostgresEventRepository(pgPool);
 // const eventRepository = new MongoEventRepository();
 
@@ -78,11 +75,12 @@ app.use(loggingMiddleware);
 // Routes
 app.use("/api/users", userRoutes(userController));
 app.use("/api/auth", authRoutes(authController));
-app.use("/api/invite", InviteesRoutes(inviteController));
+app.use("/api/v1/invitees", InviteesRoutes(inviteController));
+// app.use("/api/v1/events", eventRoutes(eventsController));
 
 
-app.use("/api/v1", eventRoutes(eventsController));
-app.use('/api/v1', guestRoutes);
+app.use("/api/v1/events", eventRoutes(eventsController));
+
 // Handle Errors
 app.use(errorMiddleware);
 
@@ -93,4 +91,4 @@ app.listen(port, () => {
 //   throw new Error("Function not implemented.");
 // }
 
-});
+

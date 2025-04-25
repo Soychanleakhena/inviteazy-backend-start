@@ -31,21 +31,19 @@ export class PostgresInviteesRepository implements IInviteeRepository {
     }
 
     async create(invitee: IInviteeWithoutId): Promise<IInvitee> {
-        const id = uuidv4();
         const created_at = new Date();  
         const status = invitee.status || 'pending'; 
-        const qr_code = invitee.qr_code || `https://example.com/qr/${id}`; 
+        const qr_code = invitee.qr_code || `https://example.com/qr`; 
         const is_checked_in = invitee.is_checked_in ?? false; 
         const checked_in_at = invitee.checked_in_at ?? null; 
 
 
         const query = `
-            INSERT INTO invitees (id, event_id, user_id, status, qr_code, is_checked_in, checked_in_at, created_at)
-            VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+            INSERT INTO invitees (event_id, user_id, status, qr_code, is_checked_in, checked_in_at, created_at)
+            VALUES ($1, $2, $3, $4, $5, $6, $7)
             RETURNING *`;
 
         const values = [
-            id,
             invitee.event_id,
             invitee.user_id,
             status,
@@ -86,4 +84,23 @@ export class PostgresInviteesRepository implements IInviteeRepository {
     async delete(id: string): Promise<void> {
         await queryWithLogging(this.pool, "DELETE FROM invitees WHERE id = $1", [id]);
     }
+
+    async findInviteeByEventId(event_id: string): Promise<IInvitee[]> {
+        const { rows } = await queryWithLogging(this.pool, "SELECT user_id, status FROM invitees WHERE event_id = $1", [event_id]);
+        return rows;
+    }
+
+  async countInviteeStatusByEventId(event_id: string): Promise<{ status: string, count: number }[]> {
+  const { rows } = await queryWithLogging(
+    this.pool,
+    `
+    SELECT status, COUNT(*) as count
+    FROM invitees
+    WHERE event_id = $1
+    GROUP BY status
+    `,
+    [event_id]
+  );
+  return rows;
+}
 }

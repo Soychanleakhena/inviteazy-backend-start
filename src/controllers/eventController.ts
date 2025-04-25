@@ -11,7 +11,7 @@ export class EventController {
 
   async createEvent(req: AuthRequest, res: Response, next: NextFunction): Promise<void> {
     try {
-      const { name, datetime, location, description }: Omit<IEvent, "id"> = req.body;
+      const { event_name, event_datetime, location, description }: Omit<IEvent, "id"> = req.body;
       const { id } = req.user; 
       console.log(id) // Ensure user_id is coming from params or body
       
@@ -21,8 +21,8 @@ export class EventController {
   
       const newEvent = await this.eventService.createEvent({
         user_id: id,
-        name,
-        datetime,
+        event_name,
+        event_datetime,
         location,
         description,
        
