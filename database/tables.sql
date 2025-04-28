@@ -10,3 +10,17 @@ CREATE TABLE events (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
+
+CREATE TABLE invitees (
+    id SERIAL PRIMARY KEY,
+    event_id UUID NOT NULL,
+    user_id UUID NOT NULL,
+    status VARCHAR(10) NOT NULL CHECK (status IN ('pending', 'accept', 'maybe', 'no', 'busy')),
+    qr_code VARCHAR(255) NOT NULL,
+    is_checked_in BOOLEAN DEFAULT FALSE,
+    checked_in_at TIMESTAMP NULL DEFAULT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT fk_event FOREIGN KEY (event_id) REFERENCES events(id) ON DELETE CASCADE,
+    CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
