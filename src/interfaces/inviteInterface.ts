@@ -1,22 +1,26 @@
 export interface IInvitee {
     id?: string;
-    event_id: string; 
-    user_id: string; 
-    status: 'pending' | 'accept' | 'maybe' | 'no' | 'busy'; 
+    event_id: string;
+    user_id: string;
+    status: 'pending' | 'accept' | 'maybe' | 'no' | 'busy';
     qr_code: string;
-    is_checked_in: boolean; 
-    checked_in_at: Date | null; 
-    gift: string | null; // <-- added this line
+    is_checked_in: boolean;
+    checked_in_at: Date | null;
+    checked_out_at: Date | null;  
+    is_checked_out: boolean;  
+    gift: string | null;
     created_at?: Date;
 }
 
 export interface IInviteeWithoutId extends Omit<IInvitee, 'id' | 'created_at'> {
-    event_id: string; 
-    status: 'pending' | 'accept' | 'maybe' | 'no' | 'busy'; 
+    event_id: string;
+    status: 'pending' | 'accept' | 'maybe' | 'no' | 'busy';
     qr_code: string;
-    is_checked_in: boolean; 
+    is_checked_in: boolean;
     checked_in_at: Date | null;
-    gift: string | null; // <-- added this line
+    checked_out_at: Date | null;  
+    is_checked_out: boolean;  
+    gift: string | null;
 }
 
 

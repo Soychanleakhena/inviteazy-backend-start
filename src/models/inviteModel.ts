@@ -18,6 +18,9 @@ const inviteeSchema: Schema = new Schema(
         qr_code: { type: String, required: true },
         is_checked_in: { type: Boolean, default: false },
         checked_in_at: { type: Date, default: null },
+        is_checked_out: { type: Boolean, default: false }, 
+        checked_out_at: { type: Date, default: null }, 
+        gift: { type: String, default: null },
         created_at: { type: Date, default: Date.now }
     }
 );
