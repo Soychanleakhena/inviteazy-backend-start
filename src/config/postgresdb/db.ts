@@ -1,12 +1,16 @@
+// src/config/postgres.ts
+
 import { Pool } from "pg";
+import "dotenv/config"; // Load variables from .env
 
 export const connectPostgresDb = (): Pool => {
   const pool = new Pool({
-    user: "postgres",
-    host: "62.72.46.248",
-    database: "inviteazy_SMH",
-    password: "NZt3C7DPfWnZyy8N",
-    port: 5432,
+    user: process.env.POSTGRES_USER,
+    host: process.env.POSTGRES_HOST,
+    database: process.env.POSTGRES_DB,
+    password: process.env.POSTGRES_PASSWORD,
+    port: 5432,  
   });
+
   return pool;
 };

@@ -31,7 +31,7 @@ dotenv.config();
 
 import { connectMysqlDb } from "./config/mysqldb/db";
 const app = express();
-const port = 3001;
+const port = process.env.PORT ?? 3000;
 
 // Switch connection to database
 // connectMongoDB();

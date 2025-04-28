@@ -2,7 +2,7 @@ services:
   app:
     build: .
     ports:
-      - "4000:3000"
+      - "4005:3000"
     environment:
       - JWT_SECRET=${JWT_SECRET}
       - PORT=${PORT}
@@ -12,4 +12,3 @@ services:
       - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - REDIS_URL=${REDIS_URL}
-      
