@@ -17,7 +17,7 @@ import { PostgresInviteesRepository } from "./repositories/postgres/inviteaRepos
 import { InviteeService } from "./services/inviteService";
 
 
-import { FirebaseUserRepository } from "./repositories/firebasedb/userRepository";
+
 // import { MongoEventRepository } from "./repositories/mongodb/eventRepository";
 // import { initializeApp } from "firebase-admin";
 import eventRoutes from "./routes/eventRoutes";
