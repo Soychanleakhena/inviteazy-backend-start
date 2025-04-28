@@ -25,18 +25,19 @@ export class InviteesController {
 
     async createInvitee(req: Request, res: Response, next: NextFunction) {
         try {
-            const { event_id ,user_id} = req.params;
-            const {  gift } = req.body; // <-- get gift from req.body too
-            console.log("===>", event_id, user_id, gift);
+            const { event_id } = req.params;
+            const { user_id} = req.body; 
     
             const newInvitee = await this.inviteesService.create({
                 event_id,
                 user_id,
-                status: 'pending', // or 'invited', depending on your logic
-                qr_code: "https://example.com/qr", // you can later auto-generate
+                status: 'pending', 
+                qr_code: "https://example.com/qr", 
                 is_checked_in: false,
                 checked_in_at: null,
-                gift: gift || null // <-- use gift if provided, else null
+                is_checked_out: false,  
+                checked_out_at: null,   
+                gift : null  
             });
     
             res.status(201).json({ message: "New invitee created", data: newInvitee });
@@ -44,6 +45,7 @@ export class InviteesController {
             next(error);
         }
     }
+    
     
 
     async updateInvitee(req: Request, res: Response, next: NextFunction) {

@@ -30,33 +30,38 @@ export class PostgresInviteesRepository implements IInviteeRepository {
         return rows;
     }
 
-async create(invitee: IInviteeWithoutId): Promise<IInvitee> {
-    const created_at = new Date();  
-    const status = invitee.status || 'pending'; 
-    const qr_code = invitee.qr_code || `https://example.com/qr`; 
-    const is_checked_in = invitee.is_checked_in ?? false; 
-    const checked_in_at = invitee.checked_in_at ?? null; 
-    const gift = invitee.gift ?? null;
-
-    const query = `
-        INSERT INTO invitees (event_id, user_id, status, qr_code, is_checked_in, checked_in_at, gift, created_at)
-        VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
-        RETURNING *`;
-
-    const values = [
-        invitee.event_id,
-        invitee.user_id,
-        status,
-        qr_code,
-        is_checked_in,
-        checked_in_at,
-        gift,
-        created_at
-    ];
-
-    const { rows } = await queryWithLogging(this.pool, query, values);
-    return rows[0];
-}
+    async create(invitee: IInviteeWithoutId): Promise<IInvitee> {
+        const created_at = new Date();  
+        const status = invitee.status || 'pending'; 
+        const qr_code = invitee.qr_code || `https://example.com/qr`; 
+        const is_checked_in = invitee.is_checked_in ?? false; 
+        const checked_in_at = invitee.checked_in_at ?? null; 
+        const is_checked_out = invitee.is_checked_out ?? false; 
+        const checked_out_at = invitee.checked_out_at ?? null;
+        const gift = invitee.gift ?? null;
+    
+        const query = `
+            INSERT INTO invitees (event_id, user_id, status, qr_code, is_checked_in, checked_in_at, is_checked_out, checked_out_at, gift, created_at)
+            VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
+            RETURNING *`;
+    
+        const values = [
+            invitee.event_id,
+            invitee.user_id,
+            status,
+            qr_code,
+            is_checked_in,
+            checked_in_at,
+            is_checked_out, 
+            checked_out_at, 
+            gift,
+            created_at
+        ];
+    
+        const { rows } = await queryWithLogging(this.pool, query, values);
+        return rows[0];
+    }
+    
 
 
     async update(id: string, invitee: Partial<IInviteeWithoutId>): Promise<IInvitee | null> {
@@ -116,9 +121,9 @@ async checkin(event_id: string, user_id: string): Promise<IInvitee> {
           RETURNING *`,
         [event_id, user_id]
     );
-    if (rows.length === 0) {
-        throw new Error("No invitee found for the given event_id and user_id");
-    }
+    // if (rows.length === 0) {
+    //     throw new Error("No invitee found for the given event_id and user_id");
+    // }
     return rows[0];
 }
 async checkout(event_id: string, user_id: string, gift: string): Promise<IInvitee> {
