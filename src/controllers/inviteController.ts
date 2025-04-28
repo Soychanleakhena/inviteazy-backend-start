@@ -25,23 +25,26 @@ export class InviteesController {
 
     async createInvitee(req: Request, res: Response, next: NextFunction) {
         try {
-            const { event_id } = req.params;
-            const {user_id}  = req.body;
-            console.log("===>", event_id, user_id);
+            const { event_id ,user_id} = req.params;
+            const {  gift } = req.body; // <-- get gift from req.body too
+            console.log("===>", event_id, user_id, gift);
+    
             const newInvitee = await this.inviteesService.create({
                 event_id,
                 user_id,
                 status: 'pending', // or 'invited', depending on your logic
-                qr_code: "https://example.com/qr", // or leave it blank if backend handles it
+                qr_code: "https://example.com/qr", // you can later auto-generate
                 is_checked_in: false,
                 checked_in_at: null,
-              });
-              
+                gift: gift || null // <-- use gift if provided, else null
+            });
+    
             res.status(201).json({ message: "New invitee created", data: newInvitee });
         } catch (error) {
             next(error);
         }
     }
+    
 
     async updateInvitee(req: Request, res: Response, next: NextFunction) {
         try {
@@ -118,6 +121,28 @@ export class InviteesController {
         } catch (error) {
             next(error);
         }
+        }
+        async checkin(req: Request, res: Response, next: NextFunction) {
+            try{
+                const {event_id,user_id}=req.params;
+                const result=await this.inviteesService.checkin(event_id,user_id);
+                res.status(200).json({message:"inviteazy checkin successfully",data:result});
+            }catch(error){
+                next(error);
+            }
+        }
+        async checkout(req: Request, res: Response, next: NextFunction) {
+            try{
+                const {event_id,user_id}=req.params;
+                const {gift}=req.body;
+
+                const result = await this.inviteesService.checkout(event_id, user_id,gift);
+                res.status(200).json({message:"inviteazy checkout successfully",data:result});
+            }catch(error){
+                next(error);
+            }
+        }
       
     }
+
 }

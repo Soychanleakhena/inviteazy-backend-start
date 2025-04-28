@@ -57,4 +57,11 @@ export class InviteeService implements IInviteeService {
   ): Promise<{ status: string; count: number }[]> {
     return await this.inviteeRepository.countInviteeStatusByEventId(event_id);
   }
-}
+  async checkin(event_id: string, user_id: string): Promise<IInvitee> {
+    return await this.inviteeRepository.checkin(event_id,user_id)
+  }
+  async checkout(event_id: string, user_id: string, gift: string): Promise<IInvitee> {
+    return await this.inviteeRepository.checkout(event_id, user_id, gift);
+  }
+}  
+
