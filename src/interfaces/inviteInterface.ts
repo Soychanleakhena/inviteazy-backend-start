@@ -1,8 +1,9 @@
+import { InvitationStatus } from '../utils/enum'
 export interface IInvitee {
     id?: string;
     event_id: string;
     user_id: string;
-    status: 'pending' | 'accept' | 'maybe' | 'no' | 'busy';
+    status: InvitationStatus;
     qr_code: string;
     is_checked_in: boolean;
     checked_in_at: Date | null;
@@ -14,7 +15,7 @@ export interface IInvitee {
 
 export interface IInviteeWithoutId extends Omit<IInvitee, 'id' | 'created_at'> {
     event_id: string;
-    status: 'pending' | 'accept' | 'maybe' | 'no' | 'busy';
+    status: InvitationStatus
     qr_code: string;
     is_checked_in: boolean;
     checked_in_at: Date | null;
@@ -30,7 +31,7 @@ export interface IInviteeRepository {
     findByEventId(event_id: string): Promise<IInvitee[]>;
     findByUserId(user_id: string): Promise<IInvitee[]>;
     create(invitee: IInviteeWithoutId): Promise<IInvitee>;
-    update(id: string, invitee: Partial<IInviteeWithoutId>): Promise<IInvitee | null>;
+    update(id: string, status: InvitationStatus): Promise<IInvitee | null>;
     delete(id: string): Promise<void>;
     findInviteeByEventId(event_id: string): Promise<IInvitee[]>;
     countInviteeStatusByEventId(event_id: string): Promise<{ status: string, count: number }[]>;

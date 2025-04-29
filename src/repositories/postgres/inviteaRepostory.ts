@@ -2,6 +2,7 @@ import { Pool } from "pg";
 import { IInvitee, IInviteeRepository, IInviteeWithoutId } from "../../interfaces/inviteInterface";
 import { queryWithLogging } from "./utils";
 import { v4 as uuidv4 } from "uuid";
+import { InvitationStatus } from "../../utils/enum";
 
 export class PostgresInviteesRepository implements IInviteeRepository {
     private pool: Pool;
@@ -64,28 +65,20 @@ export class PostgresInviteesRepository implements IInviteeRepository {
     
 
 
-    async update(id: string, invitee: Partial<IInviteeWithoutId>): Promise<IInvitee | null> {
-        if (Object.keys(invitee).length === 0) {
-            throw new Error('No fields provided for update');
-        }
-    
-        const updates = [];
-        const values = [];
-        let index = 1;
-    
-        for (const [key, value] of Object.entries(invitee)) {
-            updates.push(`${key} = $${index++}`);
-            values.push(value);
-        }
-    
-        values.push(id);
-        const query = `UPDATE invitees SET ${updates.join(', ')} WHERE id = $${index} RETURNING *`;
-    
-        console.log('Generated Query:', query); 
-        console.log('Query Values:', values);   
-    
-        const { rows } = await queryWithLogging(this.pool, query, values);
-        return rows[0] || null;
+    async update(id: string, status:InvitationStatus): Promise<IInvitee | null> {
+        const { rows } = await queryWithLogging(
+            this.pool,
+            
+             ` UPDATE invitees
+              SET status = $1
+              WHERE id = $2
+              RETURNING *`
+            ,
+            [status, id]
+          );
+          return rows[0] || null;
+     
+
     }
 
     async delete(id: string): Promise<void> {
