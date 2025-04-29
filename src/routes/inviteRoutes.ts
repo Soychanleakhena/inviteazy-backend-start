@@ -14,6 +14,7 @@ export default function inviteesRoutes(controller: InviteesController): Router {
     router.put('/:id', authMiddleware, validateIdInURLParam, controller.updateInvitee.bind(controller));
     router.delete('/:id', authMiddleware, validateIdInURLParam, controller.deleteInvitee.bind(controller));
     router.get('/:event_id/invitee', authMiddleware, controller.getInviteesByEventId.bind(controller));
+    router.patch('invitation/:id/status',authMiddleware,controller.updateInvitee.bind(controller));
     router.get('/:event_id/status', authMiddleware, controller.countInviteeStatusByEventId.bind(controller));
     router.patch('/checkin/:event_id/:user_id', authMiddleware, controller.checkin.bind(controller));
     router.patch('/checkout/:event_id/:user_id', authMiddleware, controller.checkout.bind(controller));

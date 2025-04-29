@@ -4,6 +4,7 @@ import {
   IInviteeWithoutId,
 } from "../interfaces/inviteInterface";
 import jwt from "jsonwebtoken";
+import { InvitationStatus } from "../utils/enum";
 
 export class InviteeService implements IInviteeService {
   constructor(private inviteeRepository: IInviteeService) {}
@@ -40,9 +41,9 @@ export class InviteeService implements IInviteeService {
 
   async update(
     id: string,
-    invitee: Partial<IInviteeWithoutId>
+    status : InvitationStatus
   ): Promise<IInvitee | null> {
-    return await this.inviteeRepository.update(id, invitee);
+    return await this.inviteeRepository.update(id, status);
   }
 
   delete(id: string): Promise<void> {
