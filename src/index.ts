@@ -31,7 +31,7 @@ dotenv.config();
 
 import { connectMysqlDb } from "./config/mysqldb/db";
 const app = express();
-const port = 3001;
+const port = process.env.PORT ?? 3000;
 
 // Switch connection to database
 // connectMongoDB();
@@ -75,7 +75,7 @@ app.use(loggingMiddleware);
 // Routes
 app.use("/api/users", userRoutes(userController));
 app.use("/api/auth", authRoutes(authController));
-app.use("/api/v1/invitees", InviteesRoutes(inviteController));
+app.use("/api/v1", InviteesRoutes(inviteController));
 // app.use("/api/v1/events", eventRoutes(eventsController));
 
 
